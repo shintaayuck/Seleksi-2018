@@ -7,11 +7,12 @@
 
 <h2 align="center">
   <br>
-  Data Scraping
+  Data Scraping : Youtube Comments Scraper
   <br>
   <br>
 </h2>
 
+A youtube comments https://www.youtube.com/all_comments?v={yt_id} scraper, made with Python3. yt_id is the youtube video ID which will be scraped. It collects comment ID, comment's content, comment's published time relative to scrape time, and author of the comment.
 
 ### Specifications
 
@@ -67,6 +68,50 @@ Preprocessing contohnya :
 - Reference (Library used, etc)
 - Author
 ```
+### Dependencies
+* Python 3.6
+* requests (pip install requests)
+* lxml (pip install lxml)
+* cssselect (pip install cssselect)
+
+### Usage
+Without Makefile
+```
+scraper.py [--help] [--youtubeid YOUTUBEID] [--outputfile OUTPUTFILE] [--limit LIMIT]
+  --help, -h            
+                        Getting started with youtube comments scraper
+  --youtubeid YOUTUBEID, -y YOUTUBEID
+                        ID of Youtube video that we need to scrape
+                        https://www.youtube.com/watch?v={youtubeid}
+  --outputfile OUTPUTFILE, -o OUTPUTFILE
+                        Output filename, end with .json
+  --limit LIMIT, -l LIMIT
+                        maximum number of comments you want to scrape, do not
+                        use it if you want to scrape all comments
+```
+
+With Makefile (linux only)
+```
+python3 src/scraper.py --y youtubeid --o outputfilename
+- if necessary, change file directory
+- replace youtubeid and outputfilename with Youtube video ID and output filename with extension .json 
+```
+
+### JSON Structure
+The result will be saved to <outputfilename> with the following format :
+
+```
+{
+    "cid": Comment ID,
+    "text": Comment Content,
+    "time": Comment Published Time,
+    "author": Comment Author
+}
+```
+
+### Screenshot
+![alt_text]https://github.com/shintaayuck/Seleksi-2018/blob/master/Tugas1/screenshots/Hasil.png
+
 
 <h1 align="center">
   <br>
@@ -74,6 +119,16 @@ Preprocessing contohnya :
   <br>
   <br>
 </h1>
+
+### Reference
+Library used :
+* requests (http://docs.python-requests.org/en/master/)
+* lxml (http://lxml.de/)
+* cssselect (https://cssselect.readthedocs.io/en/latest/)
+
+### Author
+Name : Shinta Ayu CK
+Contact : shintaayuck@gmail.com
 
 <p align="center">
   <br>
