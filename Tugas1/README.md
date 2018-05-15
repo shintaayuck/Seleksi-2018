@@ -110,15 +110,8 @@ The result will be saved to <outputfilename> with the following format :
 ```
 
 ### Screenshot
-![alt_text]https://github.com/shintaayuck/Seleksi-2018/blob/master/Tugas1/screenshots/Hasil.png
+![alt_text](https://github.com/shintaayuck/Seleksi-2018/blob/master/Tugas1/screenshots/Hasil.png)
 
-
-<h1 align="center">
-  <br>
-  Selamat BerEksplorasi!
-  <br>
-  <br>
-</h1>
 
 ### Reference
 Library used :
@@ -129,6 +122,13 @@ Library used :
 ### Author
 Name : Shinta Ayu CK
 Contact : shintaayuck@gmail.com
+
+<h1 align="center">
+  <br>
+  Selamat BerEksplorasi!
+  <br>
+  <br>
+</h1>
 
 <p align="center">
   <br>
