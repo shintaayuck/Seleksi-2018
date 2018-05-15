@@ -4,4 +4,4 @@ clean: # remove data and binary folder
 
 build: # compile to binary (if you use interpreter, then do not implement it)
 
-run: # run your binary
+run: python3 src/scraper.py --y youtubeid --o outputfilename
